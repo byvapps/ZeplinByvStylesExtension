@@ -1,0 +1,40 @@
+{
+  "name": "ByvStyles",
+  "version": "0.1.0",
+  "description": "Code for ByvStyles framework.",
+  "scripts": {
+    "start": "zem start",
+    "build": "zem build",
+    "clean": "zem clean",
+    "exec": "zem exec"
+  },
+  "zeplin": {
+    "displayName": "ByvStyles",
+    "projectTypes": [
+      "ios",
+      "android"
+    ],
+    "options": [
+      {
+        "name": "Code for:",
+        "type": "picker",
+        "id": "codeType",
+        "submenu": true,
+        "options": [
+          {
+            "name": "Swift",
+            "value": "swift"
+          },
+          {
+            "name": "Interface Builder",
+            "value": "ib"
+          }
+        ],
+        "default": "swift"
+      }
+    ]
+  },
+  "dependencies": {
+    "zem": "^0.1.2"
+  }
+}
